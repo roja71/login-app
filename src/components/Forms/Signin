@@ -1,0 +1,48 @@
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+
+  const Signinform = () => {
+        return (
+            <>
+               <section className="Sign-in">
+            <div className="container mt-5">
+                <div className="signin-content">
+                    <div className="signin-image">
+                        <figure>
+                            <img src="" alt="Login-pic"></img>
+                        </figure>
+                        <NavLink to="/signup" className="signup-image-link">Create an account</NavLink>
+                    </div>
+                    <div className="signin-form">
+                        <h2 className="form-title">Sign-in</h2>
+                            <div className="login-form" id="login-form">
+                                
+                                <div className="form-group">
+                                    <label htmlFor="email">
+                                        <i class="zmdi zmdi-email material-icons-name"></i>
+                                    </label>
+                                    <input type="text"  name="email" id="email" placeholder="email"/>
+                                </div>
+                                
+                                <div className="form-group">
+                                    <label htmlFor="password">
+                                        <i class="zmdi zmdi-lock material-icons-name"></i>
+                                    </label>
+                                    <input type="password"  name="password" id="password" placeholder="Password"/>
+                                </div>
+                               
+                                <div className="form-group form-button">
+                                    <input type="submit"  name="signin" id="signin" className="form-submit" value="Login"/>
+                                </div>
+                                
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+            </>
+        );
+
+    }
+
+export default Signinform
